@@ -12,8 +12,8 @@ const config = {
   apiSummitUrl: 'http://2captcha.com/in.php',
   apiRetrieveUrl: 'http://2captcha.com/res.php'
 }
-let email = 'kiplanner.app@gmail.com'
-let passwoed = 'dr0gu3r13s_un0_4_KI'
+let email = 'CORREO_KI'
+let password = 'CONTRASEÑA_KI_UNOA'
 // login
 let loginUrl = 'https://drogueriasunoa.com/account/login'
 let emailField = '#CustomerEmail'
@@ -27,7 +27,7 @@ let sendCaptcha = '.shopify-challenge__button';
   const page = await browser.newPage();
   await page.goto(loginUrl, { waitUntil: 'networkidle' })
   await page.fill(emailField,email)
-  await page.fill(passwordField, passwoed)
+  await page.fill(passwordField, password)
   await page.click(loginButton)
   // await page.waitForNavigation()
   const requestId = initiateCaptchaRequest(config.apiKey)
