@@ -1,0 +1,29 @@
+{
+  "name": "pruebas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.17.1",
+    "playwright": "^1.18.1"
+  },
+  "dependencies": {
+    "@extra/recaptcha": "^4.2.1-next.587",
+    "@infosimples/node_two_captcha": "^1.1.0",
+    "got": "^12.0.1",
+    "playwright-extra": "^1.0.1",
+    "promise-poller": "^1.9.1",
+    "request": "^2.88.2",
+    "request-promise-native": "^1.0.9",
+    "standard": "^16.0.4"
+  },
+  "esLintConfig": {
+    "extends": "standard"
+  }
+}
